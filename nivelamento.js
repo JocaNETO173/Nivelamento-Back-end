@@ -22,3 +22,4 @@ console.log(bool);
 if(10>3){
     console.log('É maior')
 }
+// 8.
