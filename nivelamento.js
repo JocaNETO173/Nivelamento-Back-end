@@ -61,3 +61,24 @@ for(let i=1;i<=10;i++){
     const multi = i * x;
     console.log(`${i} x 3 = ${multi}`);
 }
+//17. conte quantos números são maiores que 5
+let lista = [2, 6, 8, 1, 3];
+cont = 0
+for(let i=0;i<lista.length;i++){
+    if(lista[i] > 5){
+        cont++
+    }
+}
+console.log(`Essa lista tem ${cont} números que são maiores que 5.`)
+// 18. Percorra a string letra por letra
+let palavra = 'JFRS';
+for(let i =0;i<palavra.length;i++){
+    console.log(palavra[i])
+}
+// 19. Pare um loop quando encontrar o número 7, de 0 a 10
+for(let i=0;i<=10;i++){
+    console.log(i);
+    if(i===7){
+        break
+    };
+};
