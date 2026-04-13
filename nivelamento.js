@@ -82,3 +82,49 @@ for(let i=0;i<=10;i++){
         break
     };
 };
+
+// 20. Crie uma função que exibe uma mensagem.
+function mensagem(){
+    console.log('esta mensagem foi gerada por uma função')
+};
+mensagem();
+
+// 21. Função que multiplica dois números.
+function multiply(a, b){
+    return a * b;
+};
+console.log(multiply(2,3));
+// 22. crie uma função que verifica se é par ou impar
+function verificacao(x){
+    if(x%2==0){
+        return 'par'
+    }
+    else{
+        return 'impar'
+    };
+}
+console.log(verificacao(18))
+
+// com ternário
+
+function ternario(num){
+    return num%2===0?"par" : "impar";
+};
+console.log(ternario(53));
+
+//23. crie uma função que retorne o dobro.
+function dobro(x){
+    return x * 2;
+}
+console.log(dobro(35));
+
+// 24. crie uma funç]ao que some elemento de um array.
+
+function soma(array){
+    total=0;
+    for(let i=0;i<array.length;i++){
+        total += array[i];
+    }
+    return total;
+}
+console.log(soma([5,30,2]));
