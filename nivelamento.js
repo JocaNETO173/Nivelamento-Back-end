@@ -128,3 +128,38 @@ function soma(array){
     return total;
 }
 console.log(soma([5,30,2]));
+
+// 25. Verifique se o número 15 é positivo e exiba uma mensagem
+console.log(15 > 0);
+// teste ternário
+console.log(15>0? "par" : "impar");
+//com if e else
+if(15>0){
+    console.log('15 é positivo')
+}
+else{
+    console.log('15 é negativo')
+}
+
+//26. verifique se uma pessoa com 17 anos é maior de idade
+let idade = 17
+if(idade >= 18){
+    console.log(`Esta pessoa tem ${idade} anos e é maior de idade`)
+} else {
+    console.log(`Essa pessoa tem ${idade} anos, ou seja, é menor de idade`)
+};
+// 27. Crie um array com os números 10, 20, 30, 40 e exiba todos.
+let array_numeros = [10, 20, 30, 40]
+console.log(array_numeros)
+
+// 28. Crie um array com 5 frutas e exiba a primeira fruta.
+
+let frutas = ['abacate', 'banana', 'caju', 'damasco', 'pitaia']
+console.log(frutas[0])
+
+//29. adicione o número 50 no final do array [10, 20, 30, 40]
+let array_numeros1 = [10,20,30,40]
+array_numeros1.push(50)
+console.log(array_numeros1)
+
+//30. Remova 
