@@ -197,6 +197,7 @@ for(let i=0;i<frutas2.length;i++){
 
 // 35: Exiba um por um os elementos do array ["azul", "verde", "amarelo"]
 
+
 // 36: Exiba o último elemento do array [100, 200, 300, 400, 500]
 
 
@@ -226,21 +227,79 @@ for(let i=0;i<frutas2.length;i++){
 // ==================== ATIVIDADES COM OBJETOS ====================
 
 // 47: Crie um objeto pessoa com nome "Ana" e idade 25
+let pessoa = {
+    nome: "Ana",
+    idade: 25,
+};
 
 // 48: Acesse e exiba o nome do objeto {nome: "Carlos", cidade: "São Paulo"}
+let pessoa2 = {
+    nome: "Carlos",
+    cidade: "São Paulo"
+};
+
+console.log(`Nome ${pessoa2.nome}`);
 
 // 49: Adicione a propriedade "curso" ao objeto {nome: "Maria", idade: 20}
+let pessoa3 = {
+    nome: "Maria",
+    idade: 20
+}
+console.log(pessoa3)
+
+pessoa3.curso = "T.I.";
+console.log(pessoa3);
 
 // 50: Altere a idade do objeto {nome: "João", idade: 18} para 19
+let pessoa4 = {nome: "João", idade: 18};
+
+console.log(pessoa4);
+
+pessoa4.idade = 19;
+
+console.log(pessoa4);
 
 // 51: Remova a propriedade "telefone" do objeto {nome: "Pedro", telefone: "99999-9999"}
+let pessoa5 = {nome: "Pedro", telefone: "99999-9999"};
+
+console.log(pessoa5);
+
+delete pessoa5.telefone
+
+console.log(pessoa5);
 
 // 52: Exiba todas as propriedades do objeto {marca: "Nike", tamanho: 42, cor: "preto"}
+let pessoa6 = {marca: "Nike", tamanho: 42, cor: "preto"};
+
+console.log(pessoa6);
 
 // 53: Crie um objeto cachorro com nome "Rex" e um método latir que exibe "Au au!"
+let cachorro = {
+    nome: "Rex",
+    metodo: function latir(){
+        console.log("Au au!");
+    }
+}
+
+console.log();
 
 // 54: Crie um objeto aluno com nome "Lucas" e notas [8, 7, 9]
+let aluno = {
+    nome: "Lucas",
+    notas: [8, 7, 9],
+};
+
+console.log(aluno);
 
 // 55: Crie um objeto carro com marca "Fiat" e um objeto motor com potencia "1.0"
+let carro = {
+    marca: "Fiat",
+    motor: "1.0"
+}
 
 // 56: Crie um array com 3 objetos de produtos (nome e preço) e exiba todos
+let array56 = [
+    produto1 = {nome: "Queijo Defumado", preco: 60.00},
+    produto2 = {nome: "Queijo Provolone", preco: 86.00},
+    produto3 = {nome: "Queijo Gorgonzola", preco: 150.00}
+]

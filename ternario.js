@@ -90,6 +90,7 @@ Classifique o número em positivo, negativo ou zero.
 - Se > 0: "Positivo"
 - Se < 0: "Negativo"
 - Se = 0: "Zero"*/
+console.log("=== Exercício 8 ===");
 let num8 = Math.floor(Math.random() * 20 - 10);
 let resultado8 = (num8 >= 0) ? (num8 === 0 ? "Zero" : "Positivo") : "Negativo";
 console.log(`O número ${num8} será classificado como ${resultado8}`)
@@ -99,6 +100,7 @@ console.log(`O número ${num8} será classificado como ${resultado8}`)
 Simule um login simples.
 - Se usuario for "admin" E senha for "123", retorne "Login OK"
 - Caso contrário, "Falha no login"*/
+console.log("=== Exercício 9 ===");
 let usuario = "admin";
 let senha = "123";
 let resultado9 = (usuario === "admin") ? (senha === "123" ? "Login OK" : "Falha no Login") : "Falha no Login";
@@ -110,7 +112,7 @@ Classifique a pessoa por idade:
 - Entre 12 e 17: "Adolescente"
 - Entre 18 e 59: "Adulto"
 - 60 ou mais: "Idoso"*/
-
+console.log("=== Exercício 10 ===");
 let idade10 = Math.floor(Math.random()* 59 + 1);
 let resultado10 = (idade10 < 12) ? "Criança" : (idade10 < 18) ? "Adolescente" : (idade10 < 60) ? "Adulto" : "Idoso";
 console.log(`A idade é ${idade10} então a pessoa é classificada como ${resultado10}`);
