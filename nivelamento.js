@@ -187,13 +187,18 @@ console.log(`o array [${arrayNum5}] multiplicado por 2, fica [${arrayNum5Mult}]`
 
 // 34: Verifique se a fruta "laranja" existe no array ["maçã", "banana", "uva"]
 let frutas2 = ["maçã","banana","uva"]
+let achar = false;
 for(let i=0;i<frutas2.length;i++){
     if(frutas2[i] === "laranja"){
-        console.log("Laranja existe nesse array")
-    } else {
-        console.log("Laranja não existe nesse array")
+        achar = true
     }
 }
+if(achar){
+    console.log("Laranja existe nesse array")
+} else {
+    console.log("Laranja não existe nesse array")
+}
+
 
 // 35: Exiba um por um os elementos do array ["azul", "verde", "amarelo"]
 let array35 = ["azul","verde","amarelo"];
@@ -244,12 +249,14 @@ console.log(matriz41);
 // 42: Exiba os elementos da diagonal principal da matriz [[1,2,3],[4,5,6],[7,8,9]]
 let matriz42 = [[1,2,3],[4,5,6],[7,8,9]];
 for(let i=0;i<matriz42.length;i++){
-    for(let j=0;j<matriz42[i].length;j++){
-        [0][0], 
-    }
+    console.log(matriz42[i][i])
 }
 
 // 43: Altere o elemento da linha 0, coluna 1 da matriz [[1,2],[3,4]] para 10
+let matriz43 = [[1,2],[3,4]];
+console.log(matriz43)
+matriz43[0][1] = 10;
+console.log(matriz43)
 
 // 44: Exiba apenas a primeira linha da matriz [[10,20],[30,40],[50,60]]
 
