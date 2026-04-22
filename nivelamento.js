@@ -196,24 +196,58 @@ for(let i=0;i<frutas2.length;i++){
 }
 
 // 35: Exiba um por um os elementos do array ["azul", "verde", "amarelo"]
+let array35 = ["azul","verde","amarelo"];
+for(let i=0;i<array35.length;i++){
+    console.log(array35[i])
+}
 
 
 // 36: Exiba o último elemento do array [100, 200, 300, 400, 500]
-
+let array36 = [100, 200, 300, 400, 500];
+console.log(array36[array36.length - 1])
 
 // ==================== ATIVIDADES COM MATRIZ ====================
 
 // 37: Crie uma matriz 2x2 com os números 1, 2 na primeira linha e 3, 4 na segunda
+let matriz37 = [
+    [1,2],
+    [3,4]
+];
 
 // 38: Exiba o elemento da linha 1, coluna 2 da matriz [[5, 6], [7, 8]]
+let matriz38 = [[5, 6], [7, 8]];
+console.log(matriz38[0][1])
 
 // 39: Exiba todos os elementos da matriz [[1, 2, 3], [4, 5, 6]]
+let matriz39 = [[1, 2, 3], [4, 5, 6]];
+console.log(matriz39);
 
 // 40: Some todos os números da matriz [[2, 4], [6, 8]]
+let matriz40 = [[2, 4], [6, 8]];
+let somaTotal = 0;
+
+for(let i =0;i<matriz40.length;i++){
+    for(let j=0;j<matriz40[i].length;j++){
+        somaTotal += matriz40[i][j];
+    }
+}
+console.log(somaTotal);
 
 // 41: Crie uma matriz 3x3 com números de 1 a 9
+let matriz41 = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+console.log(matriz41);
 
 // 42: Exiba os elementos da diagonal principal da matriz [[1,2,3],[4,5,6],[7,8,9]]
+let matriz42 = [[1,2,3],[4,5,6],[7,8,9]];
+for(let i=0;i<matriz42.length;i++){
+    for(let j=0;j<matriz42[i].length;j++){
+        [0][0], 
+    }
+}
 
 // 43: Altere o elemento da linha 0, coluna 1 da matriz [[1,2],[3,4]] para 10
 
@@ -277,7 +311,7 @@ console.log(pessoa6);
 let cachorro = {
     nome: "Rex",
     metodo: function latir(){
-        console.log("Au au!");
+        return "Au au!";
     }
 }
 
@@ -302,4 +336,6 @@ let array56 = [
     produto1 = {nome: "Queijo Defumado", preco: 60.00},
     produto2 = {nome: "Queijo Provolone", preco: 86.00},
     produto3 = {nome: "Queijo Gorgonzola", preco: 150.00}
-]
+];
+
+console.log(array56);
