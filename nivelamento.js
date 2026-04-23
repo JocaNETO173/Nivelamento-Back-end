@@ -225,7 +225,11 @@ console.log(matriz38[0][1])
 
 // 39: Exiba todos os elementos da matriz [[1, 2, 3], [4, 5, 6]]
 let matriz39 = [[1, 2, 3], [4, 5, 6]];
-console.log(matriz39);
+for(let i=0;i<matriz39.length;i++){
+    for(let j=0;j<matriz39[i].length;j++){
+        console.log(matriz39[i][j]);
+    }
+}
 
 // 40: Some todos os números da matriz [[2, 4], [6, 8]]
 let matriz40 = [[2, 4], [6, 8]];
@@ -259,10 +263,24 @@ matriz43[0][1] = 10;
 console.log(matriz43)
 
 // 44: Exiba apenas a primeira linha da matriz [[10,20],[30,40],[50,60]]
+let matriz44 = [[10,20],[30,40],[50,60]];
+console.log(matriz44[0]);
 
 // 45: Exiba apenas os elementos da primeira coluna da matriz [[1,2],[3,4],[5,6]]
+let matriz45 = [[1,2],[3,4],[5,6]];
+for(let i=0;i<matriz45.length;i++){
+    console.log(matriz45[i][0])
+}
 
 // 46: Multiplique todos os elementos da matriz [[1,2],[3,4]] por 2
+let matriz46 = [[1,2],[3,4]];
+let matriz46M = [[],[]];
+for(let i=0;i<matriz46.length;i++){
+    for(let j=0;j<matriz46[i].length;j++){
+        matriz46M[i][j] = (matriz46[i][j] *= 2);
+    }
+}
+console.log(matriz46M)
 
 
 // ==================== ATIVIDADES COM OBJETOS ====================
