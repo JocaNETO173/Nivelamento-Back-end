@@ -328,19 +328,22 @@ delete pessoa5.telefone
 console.log(pessoa5);
 
 // 52: Exiba todas as propriedades do objeto {marca: "Nike", tamanho: 42, cor: "preto"}
-let pessoa6 = {marca: "Nike", tamanho: 42, cor: "preto"};
+let tenis = {marca: "Nike", tamanho: 42, cor: "preto"};
 
-console.log(pessoa6);
+for(let prop in tenis){
+    console.log(`${prop}: ${tenis[prop]}`)
+}
+
 
 // 53: Crie um objeto cachorro com nome "Rex" e um método latir que exibe "Au au!"
 let cachorro = {
     nome: "Rex",
-    metodo: function latir(){
-        return "Au au!";
+    latir: function(){
+        console.log("Au Au!");
     }
 }
 
-console.log();
+cachorro.latir()
 
 // 54: Crie um objeto aluno com nome "Lucas" e notas [8, 7, 9]
 let aluno = {
@@ -363,4 +366,6 @@ let array56 = [
     produto3 = {nome: "Queijo Gorgonzola", preco: 150.00}
 ];
 
-console.log(array56);
+for(let prop in array56){
+    console.log(array56[prop])
+}
